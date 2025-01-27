@@ -14,9 +14,18 @@ export default defineConfig( ( {command , mode , isSsrBuild}) => {
     // }
     
     
+    /*
     // mode , current working directory and prefix 
+
     const env = loadEnv(mode , process.cwd(), "VITE_")
 
     console.log(env)
-    return {};
+    */
+
+   
+
+    return {
+        clearScreen: false,
+        envPrefix: "APP_"
+    };
 })
