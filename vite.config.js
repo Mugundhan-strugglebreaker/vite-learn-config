@@ -26,6 +26,14 @@ export default defineConfig( ( {command , mode , isSsrBuild}) => {
 
     return {
         clearScreen: false,
-        envPrefix: "APP_"
+        envPrefix: "APP_",
+        // envDir: "dir" //to change the directory of the env file
+        logLevel: false,
+        server: {
+            port: 3000
+        },
+        preview: {
+            port: 8080
+        }
     };
 })
